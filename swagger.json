@@ -1,0 +1,18 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Criptografia API",
+    "description": "API para criptografia de dados sensíveis do usuário",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Leonardo Adami"
+    }
+  },
+  "tags": [
+    {
+      "name": "Criptografia",
+      "description": "Operações de criptografia"
+    }
+  ],
+  "paths": {}
+}
