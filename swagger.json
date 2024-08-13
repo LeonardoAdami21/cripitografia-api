@@ -14,5 +14,41 @@
       "description": "Operações de criptografia"
     }
   ],
-  "paths": {}
+  "paths": {
+    "/cripto": {
+      "post": {
+        "tags": ["Criptografia"],
+        "summary": "Criptografar um texto",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "document": {
+                    "type": "string"
+                  },
+                  "creditCard": {
+                    "type": "string"
+                  },
+                  "value": {
+                    "type": "number"
+                  }
+                },
+                "required": ["document", "creditCard", "value"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Dados do usuário criptografados com sucesso"
+          },
+          "400": {
+            "description": "Erro na requisição"
+          }
+        }
+      }
+    }
+  }
 }
